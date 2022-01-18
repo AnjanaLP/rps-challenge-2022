@@ -1,5 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/computer'
+require './lib/game'
 
 class RPS < Sinatra::Base
   enable :sessions
@@ -13,18 +15,18 @@ class RPS < Sinatra::Base
   end
 
   post '/name' do
-    session[:name] = params[:name]
+    session[:player_name] = params[:player_name]
     redirect '/play'
   end
 
   get '/play' do
-    @name = session[:name]
-    @weapon = session[:weapon]
+    @game = Game.new(session)
     erb :play
   end
 
   post '/play' do
-    session[:weapon] = params[:weapon]
+    session[:player_weapon] = params[:player_weapon]
+    session[:computer_weapon] = Computer.new.weapon
     redirect '/play'
   end
 
