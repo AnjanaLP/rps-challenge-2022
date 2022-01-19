@@ -13,8 +13,12 @@ feature 'Play the game' do
   end
 
   scenario 'computer chooses a weapon' do
-    allow_any_instance_of(Array).to receive(:sample).and_return("Rock")
     click_button "Paper"
-    expect(page).to have_content "Computer chose Rock!"
+    message = find(:css, '#computer_weapon').text
+    expect(all_messages).to include message
+  end
+
+  def all_messages
+    Computer::WEAPONS.map { |weapon| "Computer chose #{weapon}!" }
   end
 end

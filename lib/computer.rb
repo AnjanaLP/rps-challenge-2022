@@ -1,7 +1,7 @@
 class Computer
   WEAPONS = ["Rock", "Paper", "Scissors"]
 
-  def weapon
+  def random_weapon
     WEAPONS.sample
   end
 end

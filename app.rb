@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
-require './lib/computer'
 require './lib/game'
 
 class RPS < Sinatra::Base
@@ -20,14 +19,14 @@ class RPS < Sinatra::Base
   end
 
   get '/play' do
-    @game = Game.new(session)
+    @player_name = session[:player_name]
     erb :play
   end
 
-  post '/play' do
-    session[:player_weapon] = params[:player_weapon]
-    session[:computer_weapon] = Computer.new.weapon
-    redirect '/play'
+  get '/result' do
+    @game = Game.new(params[:player_weapon])
+    @game.end
+    erb :result
   end
 
   run! if app_file == $0
