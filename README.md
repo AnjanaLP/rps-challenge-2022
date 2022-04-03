@@ -34,7 +34,7 @@ I would like a winner to be declared
 ![Screenshot](https://i.imgur.com/QaSVZHp.png?1)
 
 ### Result
-![Screenshot](https://i.imgur.com/zoP7wUF.png?1)
+![Screenshot](https://i.imgur.com/zoP7wUF.png?2)
 
 ## How to setup
 
