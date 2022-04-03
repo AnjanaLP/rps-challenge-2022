@@ -27,6 +27,15 @@ So that I can see who is the better player
 I would like a winner to be declared
 ```
 
+### Home
+![Screenshot](https://i.imgur.com/R3wO42G.png?1)
+
+### Play
+![Screenshot](https://i.imgur.com/QaSVZHp.png?1)
+
+### Result
+![Screenshot](https://i.imgur.com/zoP7wUF.png?1)
+
 ## How to setup
 
 Clone the repo to your local machine, change into the directory and install the needed gems:
