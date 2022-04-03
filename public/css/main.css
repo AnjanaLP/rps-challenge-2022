@@ -1,0 +1,49 @@
+html {
+  color: grey;
+}
+
+body {
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  padding-top: 40px;
+}
+
+span.rock-btn input {
+  background: url(https://i.imgur.com/kMBv3Vi.png) no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: none;
+}
+
+span.paper-btn input {
+  background: url(https://i.imgur.com/W4gWIsj.png) no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: none;
+}
+
+span.scissors-btn input {
+  background: url(https://i.imgur.com/S3i8gpH.png) no-repeat;
+  background-size: 200px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border: none;
+}
+
+span input {
+  text-indent: -9000px;
+  text-transform: capitalize;
+}

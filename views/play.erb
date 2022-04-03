@@ -1,9 +1,27 @@
-<h1>Hello, <%= @player_name %>!</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors | Play</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <h1>Hello, <%= @player_name %>!</h1>
 
-<h3>Here are you weapon choices, please select one:</h3>
+    <h3>Here are you weapon choices, please select one:</h3>
 
-<form action="/result">
-  <input type="submit" name="player_weapon" value="Rock">
-  <input type="submit" name="player_weapon" value="Paper">
-  <input type="submit" name="player_weapon" value="Scissors">
-</form>
+    <form action="/result">
+      <span class="rock-btn">
+        <input type="submit" name="player_weapon" value="Rock">
+      </span>
+
+      <span class="paper-btn">
+        <input type="submit" name="player_weapon" value="Paper">
+      </span>
+
+      <span class="scissors-btn">
+        <input type="submit" name="player_weapon" value="Scissors">
+      </span>
+    </form>
+  </body>
+</html>
